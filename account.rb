@@ -1,4 +1,5 @@
 dep 'create user account' do
+  require 'homebrew'
   met? {
     shell "dscl -q . -read /Users/tony RealName 2> /dev/null"
   }
